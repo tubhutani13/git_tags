@@ -1,0 +1,68 @@
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:tubhutani13/git_tags.git
+git push -u origin main
+git add .
+git commit
+git push -u origin main
+git add lib/occurance_in_hash.rb
+git commit -m "added comments and changed method"
+[main 44e3e1c] added comments and changed method
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+git push origin main
+git tag v1.0.1
+4.
+#added a file
+git add lib/replace_regex.rb
+git add git-tags-cmd.txt
+git commit -m "added cmd text file and extra code to lib"
+git tag v1.1.0
+5.
+git checkout v1.0.1
+Note: switching to 'v1.0.1'.
+git status
+HEAD detached at v1.0.1
+Changes not staged for commit:
+        modified:   Rakefile
+git add Rakefile
+git commit -m "Changed Rakefile syntax"
+[detached HEAD 16bd10a] Changed Rakefile syntax
+
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+git tag v1.0.2
+6.
+git checkout v1.1.0
+git status
+HEAD detached at v1.1.0
+Changes not staged for commit:
+        modified:   lib/replace_regex.rb
+git add lib/replace_regex.rb
+>git commit -m "Changed Method name and added comment for und
+erstanding in replace_regex"
+[detached HEAD a06aaf2] Changed Method name and added comment for understanding in replace_regex
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+7.
+git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 856 bytes | 856.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:tubhutani13/git_tags.git
+   44e3e1c..5462378  main -> main
+
+git push --tags
+Enumerating objects: 14, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 906 bytes | 906.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:tubhutani13/git_tags.git
+ * [new tag]         v1.0.0 -> v1.0.0
+ * [new tag]         v1.0.1 -> v1.0.1
+ * [new tag]         v1.0.2 -> v1.0.2
+ * [new tag]         v1.1.0 -> v1.1.0
+ * [new tag]         v1.1.1 -> v1.1.1
