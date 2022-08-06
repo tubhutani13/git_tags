@@ -10,7 +10,6 @@ git commit -m "added comments and changed method"
 [main 44e3e1c] added comments and changed method
  1 file changed, 9 insertions(+), 3 deletions(-)
 git push origin main
-<<<<<<< HEAD
 git tag v1.0.1
 4.
 #added a file
@@ -67,6 +66,3 @@ To github.com:tubhutani13/git_tags.git
  * [new tag]         v1.0.2 -> v1.0.2
  * [new tag]         v1.1.0 -> v1.1.0
  * [new tag]         v1.1.1 -> v1.1.1
-=======
-git tag v1.0.1
->>>>>>> 546237884a1765864f6711a3a7bab65bff72fbd0
